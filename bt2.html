@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>tinh diem dh khoi D</h1>
+    <span>mon toan</span>
+    <input type="number" id="toan">
+    <br>
+    <span>mon van</span>
+    <input type="number" id="van">
+    <br>
+    <span>mon anh</span>
+    <input type="number" id="anh">
+    <br>
+    <span>khu vuc</span>
+    <select name="" id="khuvuc">
+        <option value="kv1">KV1</option>
+        <option value="kv2nt">KV2-NT</option>
+        <option value="kv2">KV2</option>
+        <option value="kv3">KV3</option>
+    </select>
+    <button onclick="tinhdiem()">Tinh diem</button>
+    <h1 style="color: red;" id="ketqua"></h1>
+</body>
+<script>
+    function tinhdiem() {
+        let a = document.getElementById("toan").value;
+        let b = document.getElementById("van").value;
+        let c = document.getElementById("anh").value;
+        x=Number(a)
+        y=Number(b)
+        z=Number(c)
+        let d=document.getElementById("khuvuc").value;
+        switch (d) {
+            case "kv1":
+                var g = 0.75 ;
+                break;
+            case "kv2nt":
+                var g = 0.5 ;
+                break;
+            case "kv2":
+                var g = 0.25 ;
+                break;
+            case "kv3":
+                varnumber
+                break;
+        }
+        e=Number(g)
+        let f = x + y + z + g
+        document.getElementById("ketqua").innerText = f
+    }
+</script>
+</html>

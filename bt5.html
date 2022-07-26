@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="sotien">
+    <select name="" id="name1">
+        <option value="VND">VietNam</option>
+        <option value="USD">USD</option>
+    </select>
+    <select name="" id="name2">
+        <option value="VND">VietNam</option>
+        <option value="USD">USD</option>
+    </select>
+    <button onclick="chuyen()">Convert</button>
+    <p id="ketqua"></p>
+</body>
+<script>
+    function chuyen() {
+        let a = Number(document.getElementById("sotien").value);
+        let kv = document.getElementById("name1").value;
+        switch (kv) {
+            case "VND":
+                var b = 1
+                break;
+            case "USD":
+                var b = 23000;
+                break;
+        }
+        let kv1 = document.getElementById("name2").value;
+        switch (kv1) {
+            case "VND":
+                var c = 1;
+                break;
+            case "USD":
+                var c = 23000;
+                break;
+        }
+        let d = a * (b/c)
+        document.getElementById("ketqua").innerText= d
+    }
+
+
+
+
+</script>
+
+</html>

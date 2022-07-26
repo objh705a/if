@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Gia hoa qua</h1>
+    <select name="" id="qua">
+        <option value="mangcut" >măng cụt</option>
+        <option value="oi">ổi</option>
+        <option value="duahau" >dưa hấu</option>
+        <option value="tao" >táo</option>
+        <option value="xoai" >xoài</option>
+        <option value="cam" >cam</option>
+    </select>
+    <button onclick="hiengia()"> xem giá</button>
+    <br>
+    <p id="hienthigia"></p>
+</body>
+<script>
+    function hiengia() {
+        let hoaqua = document.getElementById("qua").value;
+        switch (hoaqua) {
+            case"mangcut" :
+                document.getElementById("hienthigia").innerText="50000 vnd/kg";
+                break;
+            case"oi" :
+                document.getElementById("hienthigia").innerText="20000 vnd/kg";
+                break;
+            case"duahau" :
+                document.getElementById("hienthigia").innerText="20000 vnd/kg";
+                break;
+            case"tao" :
+                document.getElementById("hienthigia").innerText="30000 vnd/kg";
+                break;
+            case"xoai" :
+                document.getElementById("hienthigia").innerText="30000 vnd/kg";
+                break;
+            case"cam" :
+                document.getElementById("hienthigia").innerText="40000 vnd/kg";
+                break;
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    let chieucao = prompt("nhập chiều cao")
+    a = Number(chieucao)
+    let cannang = prompt("nhập cân nặng")
+    b = Number(cannang)
+    c = b / (a ** 2)
+   
+    if (c>=0) {
+        if (c<16) {
+            alert ("Gầy độ III")
+        }
+        else {
+            if (16<=c && c<17) {
+                alert("Gầy độ II")
+            }
+            else {
+                if (17<=c && c<18.5) {
+                    alert("Gầy độ I")
+                }
+                else {
+                    if (18.5<=c && c<25) {
+                        alert("Bình thường")
+                    }
+                    else {
+                        if (25<=c && c<30) {
+                            alert("Thừa cân")
+                        }
+                        else {
+                            if (30<=c && c<35) {
+                                alert ("Béo phì độ I")
+                            }
+                            else {
+                                if (35<=c && c<40) {
+                                    alert ("Béo phì độ II")
+                                }
+                                else {
+                                    if (c>40) {
+                                    alert ("Béo phì độ III")
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    else {
+        alert("dữ liệu ko hợp lệ")
+    }
+    
+</script>
+</html>
